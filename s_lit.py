@@ -237,9 +237,9 @@ def find(path,selected_quantity):
 
     typ = selected_quantity
     print("required=",typ)
-    extracted_text = extract_text(path)
+    
     if typ not in ["height", "depth", "width"]:
-        
+        extracted_text = extract_text(path)
         # print(extracted_text)
         poss = orgasm[typ]
         final_ot=[]
@@ -508,6 +508,7 @@ quantity_options = [
     "maximum_weight_recommendation", "voltage", 
     "wattage", "item_volume"
 ]
+lll=[ "height", "width", "depth"]
 selected_quantity = st.selectbox("Select a quantity", quantity_options)
 
 # Show button
@@ -524,9 +525,10 @@ if st.button('Show Quantity'):
 
 
         F_AA=find('downloaded.jpg',selected_quantity)
-        if os.path.exists("annotated.jpg"):
-            saved_image = Image.open("annotated.jpg")
-            st.image(saved_image, caption="Saved Image", use_column_width=True)
+        if selected_quantity in lll:
+            if os.path.exists("annotated.jpg"):
+                saved_image = Image.open("annotated.jpg")
+                st.image(saved_image, caption="Saved Image", use_column_width=True)
 
         # Here you can add your code to process the selected quantity
         # and return a result, for now, it's just a placeholder:
