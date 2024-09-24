@@ -497,7 +497,7 @@ import os
 
 
 # Title of the app
-st.title('Image Link Input with Quantity Selector')
+st.title('Amazon Ml Challenge')
 
 # Input an image URL
 image_url = st.text_input("Enter the image URL")
