@@ -237,8 +237,9 @@ def find(path,selected_quantity):
 
     typ = selected_quantity
     print("required=",typ)
+    extracted_text = extract_text(path)
     if typ not in ["height", "depth", "width"]:
-        extracted_text = extract_text(path)
+        
         # print(extracted_text)
         poss = orgasm[typ]
         final_ot=[]
