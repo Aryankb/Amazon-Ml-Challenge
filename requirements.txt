@@ -1,0 +1,11 @@
+os
+paddlepaddle
+paddleocr
+math
+ultralytics
+opencv-python
+re
+matplotlib
+ultralytics==8.0.196
+requests
+numpy
