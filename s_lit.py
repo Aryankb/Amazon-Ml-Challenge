@@ -522,7 +522,7 @@ if st.button('Show Quantity'):
         
 
 
-        F_AA=find('output_image.png',selected_quantity)
+        F_AA=find('downloaded.jpg',selected_quantity)
         if os.path.exists("annotated.jpg"):
             saved_image = Image.open("annotated.jpg")
             st.image(saved_image, caption="Saved Image", use_column_width=True)
