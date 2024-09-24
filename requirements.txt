@@ -1,10 +1,10 @@
 # os
 paddlepaddle
 paddleocr
-math
+# math
 ultralytics
 opencv-python
-re
+# re
 matplotlib
 ultralytics==8.0.196
 requests
